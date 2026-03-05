@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Your Gift</title>
+
+<style>
+body{
+font-family:'Comic Neue',cursive;
+background:linear-gradient(135deg,#ffecd2,#fcb69f);
+text-align:center;
+padding-top:120px;
+}
+
+.gift{
+font-size:90px;
+animation:bounce 1s infinite;
+}
+
+@keyframes bounce{
+0%{transform:translateY(0);}
+50%{transform:translateY(-25px);}
+100%{transform:translateY(0);}
+}
+
+h1{
+color:#ff6f61;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>🎁 Preparing Your Gift...</h1>
+
+<div class="gift">🎁</div>
+
+<p id="text">Please wait while we prepare your surprise...</p>
+
+<script>
+setTimeout(function(){
+document.getElementById("text").innerHTML =
+"💌 Your gift will be delivered shortly!";
+},3000);
+</script>
+
+</body>
+</html>
